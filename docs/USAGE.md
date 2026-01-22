@@ -205,6 +205,39 @@ The OU is automatically cleaned on each run.
 USE ClientDB_A;
 TRUNCATE TABLE dbo.Client_A_Contacts;
 ```
+---
+
+## Visual Walkthrough
+
+### 1. Before Running the Script
+
+The Finance OU does not exist yet in Active Directory:
+
+![Active Directory before script execution](docs/images/01_before_no_finance_ou.png)
+
+### 2. Prepare Input Files
+
+Ensure both CSV files are in the script directory:
+
+![Input files in PowerShell Script folder](docs/images/02_input_files_ready.png)
+
+### 3. Execute the Script
+
+Run the script and observe the real-time log output:
+
+![Script execution with detailed logging](docs/images/03_script_execution_log.png)
+
+### 4. Verify Output Files
+
+After execution, multiple output files are generated:
+
+![Generated output files](docs/images/04_output_files_generated.png)
+
+### 5. Confirm Active Directory Changes
+
+The Finance OU now contains all imported users:
+
+![Finance OU with created users](docs/images/05_after_finance_users_created.png)
 
 ---
 
